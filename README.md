@@ -13,3 +13,19 @@ Assume the width and height of the maze are provided at run time, but the size o
 The maze itself will be read from standard input. First its width and height will be present in the input (in that order), followed by the maze, one row at a time. A '*' character represents a wall, and the space character ' ' represents open space through which one can move (i.e., a corridor). One point in the maze will have an 'S' to indicate "start", and one point will have an 'F' to indicate "finish".
 
 Your task is to use the recursive algorithm to find the path, and indicate the path on the maze using the '.' character, and print the maze with the path on the standard output.
+
+
+ex2.c
+
+In this exercise, you are to write a recursive implementation of a function bedtimestory() that takes a sequence of words and spins them into a story, as follows. If the input to the function bedtimestory() is this sequence of strings—"child", "frog", "bear", "weasel"—then it prints the following output:
+
+A child couldn't sleep, so her mother told a story about a little frog,
+  who couldn't sleep, so the frog's mother told a story about a little bear,
+    who couldn't sleep, so the bear's mother told a story about a little weasel,
+      ... who fell asleep.
+    ... and then the little bear fell asleep;
+  ... and then the little frog fell asleep;
+... and then the child fell asleep.    
+
+
+(The number of strings that bedtimestory() will be called with will be determined at runtime, not to exceed 20.)
